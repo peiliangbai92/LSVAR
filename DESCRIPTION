@@ -1,0 +1,18 @@
+Package: LSVAR
+Type: Package
+Title: Estimation of Low Rank Plus Sparse Structured VAR Model
+Version: 1.0
+Author: Peiliang Bai [aut, cre]
+Maintainer: Peiliang Bai <baipl92@ufl.edu>
+Description: Implementations of FISTA estimation algorithm low rank plus sparse structured VAR model. It relates to the algorithm in Sumanta, Li, and Michailidis (2019) <DOI: 10.1109/TSP.2018.2887401>.
+License: GPL-2
+Encoding: UTF-8
+Imports:
+        igraph,
+        mvtnorm,
+        pracma
+Suggests: 
+    rmarkdown,
+    knitr
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
