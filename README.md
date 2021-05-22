@@ -8,7 +8,7 @@ This repository is for R package **LSVAR**.
 
 To install the package from R CRAN(https://CRAN.R-project.org/package=LSVAR):
 ```
-install.packages("VARDetect")
+install.packages("LSVAR")
 ```
 
 
