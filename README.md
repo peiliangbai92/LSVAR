@@ -12,9 +12,9 @@ install.packages("LSVAR")
 ```
 
 
-You could download the R package [LSVAR_1.0.tar.gz](LSVAR_1.0.tar.gz) and locally install the package using the tar.gz File:
+You could download the R package [LSVAR_1.2.tar.gz](LSVAR_1.2.tar.gz) and locally install the package using the tar.gz File:
 ```
-install.packages("LSVAR_1.0.tar.gz", repos = NULL, type="source")
+install.packages("LSVAR_1.2.tar.gz", repos = NULL, type="source")
 ```
 
 To install the latest version of the package from GitHub:
@@ -27,7 +27,7 @@ devtools::install_github("peiliangbai92/LSVAR")
 To cite package **LSVAR** in publications use:
 
   Peiliang Bai (2021). LSVAR: Estimation of Low Rank Plus Sparse Structured VAR Model
-  R package version 1.0 https://CRAN.R-project.org/package=LSVAR
+  R package version 1.2 https://CRAN.R-project.org/package=LSVAR
 
 A BibTeX entry for LaTeX users is
 ```
@@ -35,7 +35,7 @@ A BibTeX entry for LaTeX users is
     title = {LSVAR: Estimation of Low Rank Plus Sparse Structured VAR Model},
     author = {Peiliang Bai},
     year = {2021},
-    note = {R package version 1.0},
+    note = {R package version 1.2},
     url = {https://CRAN.R-project.org/package=LSVAR},
   }
  ```
