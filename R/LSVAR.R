@@ -69,7 +69,6 @@ testVAR <- function(n, p, struct = c("sparse", "low rank", "LS")[1], sp_density 
 
         # check stationarity
         max_eigen <- max(abs(eigen(sparse_mat)$values))
-        cat(paste("Spectral radius is:", max_eigen, "\n", sep = " "))
         if(max_eigen >= 1){
             sparse_mat <- sparse_mat * spectral_radius / max_eigen
         }
@@ -86,7 +85,6 @@ testVAR <- function(n, p, struct = c("sparse", "low rank", "LS")[1], sp_density 
 
         # check stationarity
         max_eigen <- max(abs(eigen(lowrank_mat)$values))
-        cat(paste("Spectral radius is:", max_eigen, "\n", sep = " "))
         if(max_eigen >= 1){
             lowrank_mat <- lowrank_mat * spectral_radius / max_eigen
         }
@@ -107,7 +105,6 @@ testVAR <- function(n, p, struct = c("sparse", "low rank", "LS")[1], sp_density 
 
         # check stationarity
         max_eigen <- max(abs(eigen(phi)$values))
-        cat(paste("Spectral radius is:", max_eigen, "\n", sep = " "))
         if(max_eigen >= 1){
             phi <- phi * spectral_radius / max_eigen
         }
@@ -157,7 +154,7 @@ testVAR <- function(n, p, struct = c("sparse", "low rank", "LS")[1], sp_density 
 #' fit <- fista.LpS(data, lambda = lambda, mu = mu, x.true = try$model_param)
 #' summary(fit, threshold = 0.2)
 fista.LpS <- function(data, lambda, mu, alpha_L = 0.25,
-                      niter = 100, backtracking = TRUE, x.true){
+                      niter = 100, backtracking = TRUE, x.true = NULL){
     n <- dim(data)[1]
     p <- dim(data)[2]
     A <- data[1:(n-1), ]

@@ -11,7 +11,7 @@ fista.LpS(
   alpha_L = 0.25,
   niter = 100,
   backtracking = TRUE,
-  x.true
+  x.true = NULL
 )
 }
 \arguments{
